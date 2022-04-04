@@ -1383,7 +1383,7 @@
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define Y_MIN_POS -21.0
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
@@ -1399,8 +1399,7 @@
  * Software Endstops
  *
  * - Prevent moves outside the set machine bounds.
- * - Individual axes can be disabled, if desired.
- * - X and Y only apply to Cartesian robots.
+ * - Individual axes can be disabled, if desired. X and Y only apply to Cartesian robots.
  * - Use 'M211' to set software endstops on/off or report current state
  */
 
